@@ -1,10 +1,15 @@
 # Análise de Acidentes de Trânsito em São Paulo - 2025
 
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter%20Notebook-F37626?logo=jupyter&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white)
+![Scikit--learn](https://img.shields.io/badge/Scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=matplotlib&logoColor=white)
+
 ## 📋 Visão Geral
 
 Este projeto realiza uma análise abrangente dos acidentes de trânsito ocorridos em São Paulo durante o ano de 2025. Utilizando análise de dados, Machine Learning e visualização em Power BI, buscamos identificar padrões e fatores associados às ocorrências para melhor compreender as características relacionadas à gravidade dos acidentes.
-
----
 
 ## 🎯 Objetivo
 
@@ -13,8 +18,7 @@ Analisar os acidentes de trânsito ocorridos em São Paulo em 2025, utilizando a
 
 **Pergunta Principal:**  
 Quais foram os principais fatores associados aos acidentes de trânsito em São Paulo em 2025?
-
----
+<br></br>
 
 ## 🔍 Problema e Escopo
 
@@ -31,8 +35,15 @@ Identificar os principais fatores associados aos acidentes de trânsito em São 
 - **Região:** Região de São Paulo da ocorrência
 - **Idade dos Condutores:** Faixa etária dos condutores envolvidos
 - **Tipo de Acidente:** Colisão, atropelamento, capotamento, etc.
+<br></br>
 
----
+## 🏗️ Arquitetura
+
+[arquitetura](acidentes-transito-sp-data-ml-powerbi\docs\)
+
+<p align="center">
+    <em>Arquitetura desenvolvida utilizando Draw.io</em>
+</p>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -98,7 +109,7 @@ Métricas:
 - Accuracy
 - Precision, Recall, F1-score
 - Matriz de Confusão
-- ⚠️ Atenção especial a Recall e F1-score se houver desbalanceamento de classes
+- Atenção especial a Recall e F1-score se houver desbalanceamento de classes
 
 ### 9. **Interpretação do Modelo**
 - Análise de importância das variáveis
@@ -120,35 +131,28 @@ Sugestão de layout:
 - Responder pergunta principal com dados reais
 - Destacar 3 a 5 principais insights
 - Documentar limitações e próximos passos
-
----
+<br></br>
 
 ## 📁 Estrutura do Projeto
 
 ```
 acidentes-transito-sp-data-ml-powerbi/
 │
-├── README.md                          # Este arquivo
+├── README.md                          
 ├── data/
 │   ├── raw/                          # Dados originais
 │   └── processed/                    # Dados tratados
 │
 ├── notebooks/
-│   ├── 01_coleta_tratamento.ipynb   # Importação, limpeza e prep
-│   ├── 02_analise_exploratoria.ipynb # EDA e análises cruzadas
+│   ├── 01_coleta_tratamento.ipynb   # Importação, limpeza e tratamento dos dados
+│   ├── 02_analise_exploratoria.ipynb # EDA - Análise Exploratória dos Dados
 │   └── 03_machine_learning.ipynb     # ML e interpretação
 │
 ├── powerbi/
 │   └── acidentes_sp_2025.pbix        # Dashboard Power BI
 │
-├── docs/
-│   ├── dicionario_dados.md           # Descrição das colunas
-│   ├── metodologia.md                # Abordagem metodológica
-│   └── conclusoes.md                 # Insights e conclusões
-│
 └── requirements.txt                   # Dependências Python
 ```
-
 ---
 
 ## 🎓 KPIs Principais
@@ -159,8 +163,7 @@ acidentes-transito-sp-data-ml-powerbi/
 - **Velocidade Média** (se disponível)
 - **Idade Média dos Condutores** (se disponível)
 - **Índice de Gravidade**
-
----
+<br></br>
 
 ## ⚠️ Cuidados Metodológicos
 
@@ -170,8 +173,7 @@ acidentes-transito-sp-data-ml-powerbi/
 4. **Evitar Vazamento de Dados (Data Leakage):** Garantir separação correta entre treino e teste
 5. **Classes Desbalanceadas:** Usar métricas adequadas (Recall, F1-score) se houver desproporção
 6. **Rigor Analítico:** Apresentar apenas o que os dados realmente sustentarem
-
----
+<br></br>
 
 ## 🚀 Como Usar Este Repositório
 
@@ -210,8 +212,8 @@ jupyter notebook
 ## 📈 Fluxo Resumido do Projeto
 
 ```
-Coleta → Limpeza → Feature Engineering → EDA → Hipóteses → ML → 
-Avaliação → Interpretação → Power BI → Insights → Conclusões
+Coleta -> Limpeza -> Feature Engineering -> EDA -> Hipóteses -> ML -> 
+Avaliação -> Interpretação -> Power BI -> Insights -> Conclusões
 ```
 
 ---
@@ -221,8 +223,7 @@ Avaliação → Interpretação → Power BI → Insights → Conclusões
 - **Website:** [InfoSiga - DETRAN SP](https://infosiga.detran.sp.gov.br/#referencia)
 - **Período:** 2025
 - **Abrangência:** São Paulo
-
----
+<br></br>
 
 ## 📌 Observações Importantes
 
@@ -230,21 +231,86 @@ Avaliação → Interpretação → Power BI → Insights → Conclusões
 - Todos os pontos podem ser ajustados conforme necessário
 - Dados e análises estão sujeitos a disponibilidade e qualidade das informações coletadas
 - Resultados refletem padrões nos dados de 2025 e podem não ser generalizáveis para outros períodos
+<br></br>
 
----
 
-## 👤 Autor
+## 👤 Colaboradores
 
-**Lohan Ribeiro**
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://github.com/lohan-ribeiro">
+        <img src="https://github.com/lohan-ribeiro.png" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Lohan Ribeiro Cerqueira</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/rafanatdaniel-stack">
+        <img src="https://github.com/rafanatdaniel-stack.png" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Rafael Dias de Santi</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/FelipeSilva-Oliveira">
+        <img src="https://github.com/FelipeSilva-Oliveira.png" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Felipe da Silva Faria de Oliveira</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/RodrigoBitener">
+        <img src="https://github.com/RodrigoBitener.png" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Rodrigo Souza Machado Bitener</b></sub>
+      </a>
+    </td>
+  </tr>
 
----
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Isac-Teixeira">
+        <img src="https://github.com/Isac-Teixeira.png" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Isac Teixeira Almeida</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Wanderley Maciel Souza</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Wellington dos Santos de Souza</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="">
+        <img src="" width="100px" style="border-radius: 50%;">
+        <br>
+        <sub><b>Wilson Ademar de Arruda</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<br></br>
 
 ## 📄 Licença
 
-[Adicionar informação de licença conforme apropriado]
+Esse projeto está sob licença Apache 2.0. Veja o arquivo  [LICENSE](acidentes-transito-sp-data-ml-powerbi\LICENSE) para mais detalhes.
+<br></br>
 
----
+## 📚 Saiba Mais
 
-## 📞 Contato
+Quer entender melhor como o projeto foi desenvolvido? Confira a documentação abaixo:
 
-Para dúvidas ou sugestões sobre este projeto, abra uma issue neste repositório.
+(obs: sera incluido depois)
+
+
