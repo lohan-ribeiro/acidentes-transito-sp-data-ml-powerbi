@@ -284,15 +284,15 @@ Avaliação -> Interpretação -> Power BI -> Insights -> Conclusões
       </a>
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="100px" style="border-radius: 50%;">
+      <a href="https://github.com/Wellington-Souza1990">
+        <img src="https://github.com/Wellington-Souza1990.png" width="100px" style="border-radius: 50%;">
         <br>
         <sub><b>Wellington dos Santos de Souza</b></sub>
       </a>
     </td>
     <td align="center">
-      <a href="">
-        <img src="" width="100px" style="border-radius: 50%;">
+      <a href="https://github.com/waarruda">
+        <img src="https://github.com/waarruda.png" width="100px" style="border-radius: 50%;">
         <br>
         <sub><b>Wilson Ademar de Arruda</b></sub>
       </a>
