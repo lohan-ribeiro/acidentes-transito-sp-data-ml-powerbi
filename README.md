@@ -39,7 +39,7 @@ Identificar os principais fatores associados aos acidentes de trânsito em São 
 
 ## 🏗️ Arquitetura
 
-![arquitetura](.\docs\arquitetura_PI4.drawio.png)
+![arquitetura](docs/arquitetura_PI4.drawio.png)
 
 <p align="center">
     <em>Arquitetura desenvolvida utilizando Draw.io</em>
