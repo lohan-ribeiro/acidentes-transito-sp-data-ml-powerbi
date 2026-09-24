@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="draw.io">
+  <diagram id="arquitetura-acidentes-sp" name="Arquitetura do Projeto">
+    <mxGraphModel dx="1030" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fonte" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#43A047;strokeWidth=2;shadow=1;arcSize=12;verticalAlign=middle;" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Fonte de Dados&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(46, 125, 50); font-size: 13px;&quot;&gt;InfoSiga&lt;br&gt;DETRAN SP&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="armazenamento" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1E88E5;strokeWidth=2;shadow=1;arcSize=12;verticalAlign=middle;" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Armazenamento&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(21, 101, 192); font-size: 13px;&quot;&gt;Dados CSV&lt;br&gt;(raw / processed)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="390" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="processamento" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FB8C00;strokeWidth=2;shadow=1;arcSize=12;verticalAlign=middle;" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Processamento&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(191, 54, 12); font-size: 13px;&quot;&gt;Jupyter Notebook:&lt;br&gt;Pandas | NumPy&lt;br&gt;Matplotlib | Seaborn&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ml" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#8E24AA;strokeWidth=2;shadow=1;arcSize=12;verticalAlign=middle;" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Machine Learning&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size: 13px; color: light-dark(rgb(74, 20, 140), rgb(232, 186, 255));&quot;&gt;Jupyter Notebook:&lt;br&gt;&lt;/font&gt;&lt;font&gt;&lt;font style=&quot;font-size: 13px; color: light-dark(rgb(74, 20, 140), rgb(232, 186, 255));&quot;&gt;Scikit-learn&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="390" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF9C4;strokeColor=#FDD835;strokeWidth=2;shadow=1;arcSize=12;verticalAlign=middle;" value="&lt;b style=&quot;font-size:14px;&quot;&gt;Dashboard&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(230, 81, 0); font-size: 13px;&quot;&gt;Power BI&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="660" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" edge="1" parent="1" source="fonte" style="rounded=1;orthogonalLoop=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2.5;flowAnimation=1;" target="armazenamento">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="05XXmEzTxq6Z24m56ig1-1" connectable="0" parent="a1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;Extração do dados&lt;/font&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0148" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" edge="1" parent="1" source="armazenamento" style="rounded=1;orthogonalLoop=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2.5;flowAnimation=1;" target="processamento">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580.07" y="260.07" />
+              <mxPoint x="580.07" y="430.07" />
+              <mxPoint x="10.07" y="430.07" />
+              <mxPoint x="10.07" y="600.07" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="processamento" style="rounded=1;orthogonalLoop=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2.5;flowAnimation=1;" target="ml">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" edge="1" parent="1" source="ml" style="rounded=1;orthogonalLoop=1;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2.5;flowAnimation=1;" target="dashboard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_coleta" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#66BB6A;strokeWidth=1;fontSize=10;fontColor=#1B5E20;arcSize=20;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Coleta de dados&lt;/font&gt;" vertex="1">
+          <mxGeometry height="35" width="150" x="55" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_coleta_arrow" edge="1" parent="1" source="fonte" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#A5D6A7;strokeWidth=1;dashed=1;" target="sub_coleta">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_org" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#64B5F6;strokeWidth=1;fontSize=10;fontColor=#0D47A1;arcSize=20;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Organização&lt;br&gt;&amp;amp; Documentação&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="405" y="337.5" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_org_arrow" edge="1" parent="1" source="armazenamento" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#90CAF9;strokeWidth=1;dashed=1;" target="sub_org">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_limpeza" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#FFA726;strokeWidth=1;fontSize=10;fontColor=#BF360C;arcSize=20;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Limpeza · Feature Eng.&lt;br&gt;EDA · Hipóteses&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="160" x="60" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_limpeza_arrow" edge="1" parent="1" source="processamento" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FFCC80;strokeWidth=1;dashed=1;" target="sub_limpeza">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_modelo" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1BEE7;strokeColor=#BA68C8;strokeWidth=1;fontSize=10;fontColor=#4A148C;arcSize=20;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Modelagem&lt;br&gt;&amp;amp; Avaliação&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="405" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_modelo_arrow" edge="1" parent="1" source="ml" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#CE93D8;strokeWidth=1;dashed=1;" target="sub_modelo">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_kpi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF59D;strokeColor=#FFEE58;strokeWidth=1;fontSize=10;fontColor=#E65100;arcSize=20;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;KPIs · Insights&lt;br&gt;&amp;amp; Visualizações&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="150" x="675" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="sub_kpi_arrow" edge="1" parent="1" source="dashboard" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#FFF176;strokeWidth=1;dashed=1;" target="sub_kpi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
