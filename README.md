@@ -37,7 +37,7 @@ Identificar os principais fatores associados aos acidentes de trânsito em São 
 - **Tipo de Acidente:** Colisão, atropelamento, capotamento, etc.
 <br></br>
 
-## 🏗️ Arquitetura
+## 🏗️ Data/ML Pipeline Architecture
 
 ![arquitetura](docs/arquitetura_PI4.drawio.png)
 
@@ -192,6 +192,7 @@ git clone https://github.com/lohan-ribeiro/acidentes-transito-sp-data-ml-powerbi
 cd acidentes-transito-sp-data-ml-powerbi
 
 # Instale as dependências
+# Opcional: inicie um ambiente virtual antes de instalar as dependências.
 pip install -r requirements.txt
 ```
 
@@ -201,6 +202,7 @@ pip install -r requirements.txt
 # Inicie o Jupyter Notebook
 jupyter notebook
 
+# Acesse a pasta "notebooks"
 # Execute os notebooks em ordem:
 # 1. 01_coleta_tratamento.ipynb
 # 2. 02_analise_exploratoria.ipynb
